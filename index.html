@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEDDING PLANNING AND BUDGET TRACKER</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            height: 100vh;
+            background-image: url(background.jpg);
+            background-image: cover;
+            background-attachment: fixed;
+        }
+
+        #header {
+            background-color: #f8f8f8;
+            padding: 20px;
+            text-align: center;
+            font-size: 29px;
+            font-weight: bold;
+
+        }
+
+        #navigation {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-items: center;
+            background-color: #e0e0e0;
+            padding: 10px;
+        }
+
+        #navigation a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+        #navigation a:hover {
+            color:rgba(245, 0,0 , 0.7);
+            text-decoration: underline;
+        }
+
+        #welcome {
+            text-align: center;
+            font-size: 27px;
+            margin: 10px 0;
+            color:white;
+            
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .grid-item {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        figure {
+            grid-column: 1 / -1;
+            text-align: center;
+            margin: 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        #abcd {
+            
+            text-align: center;
+            background-color:rgba(245, 245, 245, 0.981);
+            display:flex;
+            flex-direction:row;
+            justify-content: space-evenly;  
+        }
+        #abcd a{
+            text-decoration:none ;
+            color:black;
+        }
+        #abcd a:hover{
+            color:rgba(245,0,0,0.7);
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            #navigation {
+                grid-template-columns: 1fr;
+            }
+        }
+        #over{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <header id="header">WEDDING PLANNING AND BUDGET TRACKER</header>
+    <div id="welcome">We respect your choice!</div>
+    
+    <nav id="navigation">
+        <h2><a href="index.html">HOME</a></h2>
+        <h2><a href="terms.html">TERMS OF SERVICE</a></h2>
+        <h2><a href="contact.html">CONTACT</a></h2>
+    </nav>
+
+    <figure>
+     <img src="try2.avif" alt="Couple celebrating their wedding" width="290px" height="200px" style="padding-top: 20px;">
+    </figure>
+    <inline><img src="w2.jpg" width="400px" height="300px" style="margin-right: 150px;"><img src="w1.jpg" width="400px" height="300px" style="margin-right: 160px;"><img src="new.jpg" width="400px" height="300px"></inline>
+
+    <main class="container">
+        <div class="grid-item">
+            <h2>Overview</h2>
+            <p>Your on wedding planning website, with all the tools you’ll need to create the dream celebration.<u><i><b>No signup, No registration fees!</b></i></u></p>
+        </div>
+
+        <div class="grid-item">
+            <h2>Plan Together</h2>
+            <p>The best weddings are planned together as a team. Your loved ones can each play a part in the preparations.</p>
+        </div>
+
+        <div class="grid-item">
+            <h2>Online Wedding Tools</h2>
+            <p>Our professional wedding tools will save you countless hours and make your planning experience nearly stress-free.</p>
+        </div>
+
+        <div class="grid-item">
+            <h2>Professional Software</h2>
+            <p>The online Wedding Planning Assistant is a set of professional tools to help you plan independently or with a planner.</p>
+        </div>
+        <div class="grid-item">
+            <h2>Create moments to last a lifetime. </h2>
+            <img src="w3.jpg">
+        </div>
+    </main>
+    
+    <figure>
+        <img src="try.jpg" alt="Wedding Planning Space" width="450px" height="550px">
+    </figure>
+    <!-- <h2 id="over">Useful Links:</h2> -->
+    <div id="abcd">
+        <h3><a href="guest.html" target="_blank">Wedding Guest</a><br></h3>
+        <h3><a href="budget.html" target="_blank">Wedding Budget</a><br></h3>
+        <h3><a href="calc.html" target="_blank">You Can Calculate</a><br></h3>
+    </div>
+
+    <footer>
+        <p style="color:white">&copy; 2024 Wedding Planning. All rights reserved.</p>
+    </footer>
+</body>
+</html>
